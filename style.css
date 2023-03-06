@@ -1,0 +1,89 @@
+/*CSS Animations*/
+   body {
+    background-color: #f3f1ec;
+    background-image: fit;
+    background-image:url("/Users/srinidhi/Timer/img /sand-running-through-bulbs-hourglass-measuring-passing-time_587448-1023 (1).avif") ;
+  }
+
+  /*Start and pause button */
+  #start, #pause {
+    background-color: #e3ec99;
+    border: none;
+    color: white;
+    padding: 15px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #start:hover, #pause:hover {
+    background-color: #3e8e41;
+  }
+  
+  #duration {
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 50px;
+  }
+  
+  button {
+    margin: 20px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: center;
+
+
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+
+
+  /* CSS animation */
+@keyframes timer {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Apply animation to h1 element */
+  h1 {
+    animation-name: timer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color:white;
+    font-size: 80px;
+    
+  }
+
+  
+  
+  
+  
+  
